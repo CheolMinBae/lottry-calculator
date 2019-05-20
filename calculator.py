@@ -30,12 +30,18 @@ for x in range(len(data)):
       number_cnt_array[data[x][y]].updateCnt(numbersCnt + 1)
       if data[x][y] not in unique_numbers:
         unique_numbers.append(data[x][y])
+
+print("random paper's full random combination!")
 for z in range(5):
   ran_numbers = random.sample(unique_numbers, k=6)
-  print(ran_numbers)
+  print(sorted(ran_numbers))
 
-for j in range(len(number_cnt_array)):
-  print("number %d's CNT: %d" % (j,number_cnt_array[j].getCnt()))
+print("python random.sample combination")
+for i in range(5):
+  print(sorted(random.sample(range(1,45), 6)))
+
+# for j in range(len(number_cnt_array)):
+#   print("number %d's CNT: %d" % (j,number_cnt_array[j].getCnt()))
 # ran_numbers = random.sample(unique_numbers, k=6)
 
 # print(ran_numbers)
